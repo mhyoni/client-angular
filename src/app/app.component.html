@@ -1,0 +1,8 @@
+<div>
+    <form #f="ngForm" (ngSubmit)="CustomSubmit(f)">
+        <label for="email-input">Email:</label>
+        <input type="email" id="email-input" name="email" [(ngModel)]="email" (input)="onEmailInputChange()">
+        <button [disabled]="!isValidEmail" (click)="sendEmail()">Send Email</button>
+        <p *ngIf="responseTime">Response time: {{responseTime}}</p>
+    </form>
+</div>
