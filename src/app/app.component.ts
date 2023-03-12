@@ -26,7 +26,6 @@ export class AppComponent {
   }
   CustomSubmit(f: NgForm) {
     let isValid = f.valid;
-    alert('ss');
   }
 
   onEmailInputChange() {
